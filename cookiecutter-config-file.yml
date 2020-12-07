@@ -1,0 +1,10 @@
+# This file contains values from Cookiecutter
+
+default_context:
+  project_name: "genbq"
+  project_description: "Genomics tools for BigQuery"
+  organization: "samesense"
+  license: "MIT"
+  version: "0.1.0"
+  github_name: "samesense"
+  email: "evansj@email.chop.edu"
