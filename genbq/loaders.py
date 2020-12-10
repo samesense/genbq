@@ -53,7 +53,7 @@ class CsvFileSource(beam.io.filebasedsource.FileBasedSource):
             yield res
 
 
-class _Fileobj2Iterator:
+class Fileobj2Iterator:
     def __init__(self, obj):
         self._obj = obj
 
