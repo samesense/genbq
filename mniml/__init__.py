@@ -1,9 +1,16 @@
-import codecs
-import csv
-
+import codecs, csv
 import apache_beam as beam
 from apache_beam.io import filesystem
 from apache_beam.options.pipeline_options import PipelineOptions
+
+# root = path.abspath(path.dirname(__file__))
+
+# with open(path.join(root, 'VERSION.txt'), encoding='utf-8') as f:
+#     version = f.read().strip()
+
+
+# __version__ = version
+
 
 
 class CsvFileSource(beam.io.filebasedsource.FileBasedSource):
@@ -65,7 +72,3 @@ class Fileobj2Iterator:
         if line == None or line == "":
             raise StopIteration
         return line
-
-
-if __name__ == "__main__":
-    pass
