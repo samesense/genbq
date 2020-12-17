@@ -19,7 +19,7 @@ from setuptools import setup, find_packages
 # See https://github.com/pypa/sampleproject/setup.py
 root = path.abspath(path.dirname(__file__))
 
-with open(path.join(root, 'README.rst'), encoding='utf-8') as f:
+with open(path.join(root, 'README.md'), encoding='utf-8') as f:
     long_description = 'Not for use'
 
 with open(path.join(root, 'LICENSE.txt'), encoding='utf-8') as f:
@@ -31,7 +31,7 @@ with open(path.join(root, 'VERSION.txt'), encoding='utf-8') as f:
 
 
 setup(
-    name='mniml',
+    name='genbq',
     # See https://packaging.python.org/single_source_version/
     python_requires='>=3.7',
     version=version,
@@ -39,7 +39,7 @@ setup(
     description='A minimal Python package',
     long_description=long_description,
     url='https://github.com/geoffrey-a-reed/minimal',
-    author='Geoffrey A. Reed',
+    author='samesense',
     author_email='evansj@email.chop.edu',
     license=license,
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -52,7 +52,7 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     keywords='sample setuptools development',
-    packages=['mniml'],
+    packages=['genbq'],
     install_requires=['apache-beam[gcp]'],
     package_data={
         '': ['VERSION.txt', 'LICENSE.txt']
